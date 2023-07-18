@@ -1,0 +1,27 @@
+.container {
+    background-color:antiquewhite;
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    /* Flex*/
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
+#encabezado{
+    background-color: #00425a;
+    width:100%;
+    padding: 20px;
+    /*Flex*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap:wrap;
+
+}
+#menu a{
+    color: #eff5f5;
+    text-decoration: none;
+}
