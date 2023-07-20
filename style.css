@@ -1,3 +1,10 @@
+
+body{
+  font-family: 'Belanosima', sans-serif;
+  font-family: 'Poppins', sans-serif;
+
+}
+
 .container {
     background-color:antiquewhite;
     width: 90%;
@@ -13,15 +20,122 @@
     background-color: #00425a;
     width:100%;
     padding: 20px;
+    color:#eff5f5;
     /*Flex*/
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: space-between;/*los elementos se situan uno a la izq. y el otro a la derecha*/
+    align-items: center; /*centralizamos arriba y abajo*/
     flex-direction: row;
     flex-wrap:wrap;
+   
 
 }
 #menu a{
     color: #eff5f5;
     text-decoration: none;
+}
+
+footer{
+    display:flex;
+    flex-direction: row;
+    width: 100%; /* para que abarque todo el documento */
+    margin: 50px;
+    padding: 20px;
+    justify-content: space-between; /*los elementos se situan uno a la izq. y el otro a la derecha*/
+    align-items: center; /*centralizamos verticalmente*/
+
+
+    flex-direction: row; /*con direction y con wrap logro que cuando se achique la pant. se pongan una debajo del otro*/
+    flex-wrap: wrap;
+}
+    
+ .main{
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    gap: 30px;
+    
+    @media (max-width: 768px){
+        grid-template-columns: 1 fr;
+    }
+ }   
+
+   .image {
+    background-color: #1f8470;
+   }
+   
+  img {
+    width: 400px;
+    height: auto;
+  }
+    
+.text{
+    background-color: #eff5f5;
+    @media(max-width: 768px){
+        padding: 10px;
+    }
+}
+   
+ .propuesta{
+    background-color: #eff5f5;
+    width: 100%;
+    height: 250px;
+    padding: 20px;
+    
+ }
+
+ .title{
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 50px;
+    margin-top: 10px;
+    margin-left: 10px;
+   
+ }
+ .titles{
+    display:flex;
+    justify-content: space-between;
+    margin: 15px,10px,30px,0px;
+    
+ }
+ .small{
+    flex:1;
+    padding: 10px;
+    background-color: #1f8a70;
+    border: 1px solid #00425a;
+    text-align: center;
+    margin: 0 5px;
+ }
+ 
+ @media (max-width: 768px) {
+    .propuesta {
+      padding: 10px; /* Reducimos el espacio interno en dispositivos pequeños */
+    }
+  
+    .title {
+      font-size: 20px; /* Tamaño de fuente más pequeño para el título en dispositivos pequeños */
+    }
+  
+    .titles {
+      flex-direction: column; /* Cambiamos la dirección de los subtítulos a vertical */
+      align-items: center; /* Centramos los subtítulos verticalmente */
+    }
+  
+    .small {
+      margin: 5px 0; /* Ajustamos el margen vertical entre los subtítulos */
+    }
+  }
+
+
+
+
+#direccion{
+    width: 50%; 
+  
+}
+#direction {
+    flex-grow: 1;
+}
+
+#redes{
+    
 }
